@@ -1,4 +1,4 @@
-# MakML: Programming, Plotting, and Machine Learning Workshop (October 2024)
+# MakML: Machine Learning Workshop (October 2024)
 
 These are the materials for our Programming, Plotting, and Machine Learning Workshop at Makerere University in October 2024 (MakML). Hopefully they are helpful!
 
