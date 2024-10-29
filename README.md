@@ -17,11 +17,12 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
     + You will need the following datasets: ESL.mixture.rda, TBnanostring.rds
 * Schedule:
 
-| Day/Time           | Topics                                          |
-| :------------------| :---------------------------------------------- |
-| Monday 1100-1200   | Data Science, Infectious Disease Biomarkers     |
-| Tuesday 1200-1300  | Visualizing High Dimensional Data in R          |
-| Thursday 0800-0900 | Machine Learning: Support Vector Machines       |
-| Thursday 0900-1000 | Machine Learning: Support Vector Machines       |
-| Thursday 1200-1300 | Machine Learning: Neural Networks/Deep Learning |
+| Day/Time        | Topics                                          |
+| :---------------| :---------------------------------------------- |
+| Mon 1100-1200   | Data Science, Infectious Disease Biomarkers     |
+| Tues 1200-1300  | Introduction to R, Dimension Reduction          |
+| Wed 1200-1300   | Visualizing High Dimensional Data in R          |
+| Thurs 0800-0900 | Machine Learning: Support Vector Machines       |
+| Thurs 0900-1000 | Machine Learning: Support Vector Machines       |
+| Thurs 1200-1300 | Machine Learning: Neural Networks/Deep Learning |
 
