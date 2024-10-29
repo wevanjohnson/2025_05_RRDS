@@ -23,6 +23,6 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
 | Tues 1500-1600  | Introduction to R, Dimension Reduction          |
 | Wed 1500-1600   | Visualizing High Dimensional Data in R          |
 | Thurs 0800-0900 | Machine Learning: Support Vector Machines       |
-| Thurs 0900-1000 | Machine Learning: Support Vector Machines       |
+| Thurs 0900-1000 | Machine Learning: Random Forests       |
 | Thurs 1500-1600 | Machine Learning: Neural Networks/Deep Learning |
 
