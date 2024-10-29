@@ -177,8 +177,10 @@ You will notice that the TB status is found in the first column of the data fram
 ## Data Visualization with R
 Exploratory data visualization is perhaps the greatest strength of R. One can quickly go from idea to data to plot with a unique balance of flexibility and ease. 
 
+But first lets consider a motivating example in TB research!
+
 ## Motivating Example: PCA
-Here is a PCA clustering of the TB Nanostring dataset. The points are colored based on TB status.
+Here is a PCA dimension reduction of the TB Nanostring dataset. The points are colored based on TB status.
 
 ```{r, echo=F, out.width="70%", fig.height=4.5, fig.width=6}
 TBnanostring <- readRDS("TBnanostring.rds")
@@ -194,7 +196,7 @@ pca_reduction %>% ggplot(aes(x=PC1, y=PC2, color=Condition)) +
 ```
 
 ## Motivating Example: UMAP
-Here is a UMAP clustering of the some dataset.
+Here is a UMAP dimension reduction of the TB Nanostring dataset.
 
 ```{r, echo=F, out.width="70%", fig.height=4.5, fig.width=6}
 TBnanostring <- readRDS("TBnanostring.rds")
@@ -409,6 +411,13 @@ We can change the shape or color of the points
 p + geom_point(aes(x=PC1, y=PC2), shape=1)
 ```
 
+## Geometries: additional aesthetics
+But if we want to cha
+nge color or shape based on the data, we need to add an aesthetic:
+```{r,out.width="60%", fig.height=4.5, fig.width=6}
+p + geom_point(aes(x=PC1, y=PC2, color=Condition))
+```
+
 ## Adding Layers
 Now we can add layers that change the labels, title, etc:
 
@@ -461,6 +470,14 @@ umap_reduction %>% ggplot() +
   xlab("UMAP 1") + ylab("UMAP 2") + ggtitle("UMAP Plot") +
   theme(plot.title = element_text(hjust = 0.5))  
 ```
+
+## Extra: Use ChatGPT
+
+I gave ChatGPT the following prompt:
+
+"write R code to upload the `TBnanostring.rds` gene expression dataset, where the first column is the TB status, the other columns are gene expression values for each sample,  apply PCA to the data, and make a ggplot of the first two principal components, colored by TB_status"
+
+And it worked! (Almost!)
 
 ## Session info
 \tiny
