@@ -1,4 +1,4 @@
-# Red Rock Data Science R for Tutorial (Spring 2024)
+# MakML: Programming, Plotting, and Machine Learning Workshop (October 2024)
 
 These are the materials for our Programming, Plotting, and Machine Learning Workshop at Makerere University in October 2024 (MakML). Hopefully they are helpful!
 
@@ -8,7 +8,7 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
     + Programming and Machine Learning is __NOT__ a spectator sport! You need to practice the skills you learn over and over again!
 * Communication: if you have questions or concerns, please email me: <w.evan.johnson@rutgers.edu>
 * Materials for the course:
-    + All materials for this course will be posted on the course GitHub page: [https://github.com/wevanjohnson/2024_12_MakML](https://github.com/wevanjohnson/2024_12_MakML)
+    + All materials for this course will be posted on the course GitHub page: [https://github.com/wevanjohnson/2024_10_MakML](https://github.com/wevanjohnson/2024_10_MakML)
     + You obviously have this since you are here!
 * Dependencies (R packages to install and datasets to download):
     + Install R and R Studio
