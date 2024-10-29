@@ -19,7 +19,7 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
 
 | Day/Time           | Topics                                          |
 | :------------------| :---------------------------------------------- |
-| Monday 1100-1300   | Data Science, Infectious Disease Biomarkers     |
+| Monday 1100-1200   | Data Science, Infectious Disease Biomarkers     |
 | Tuesday 1200-1300  | Visualizing High Dimensional Data in R          |
 | Thursday 0800-0900 | Machine Learning: Support Vector Machines       |
 | Thursday 0900-1000 | Machine Learning: Support Vector Machines       |
