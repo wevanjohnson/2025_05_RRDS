@@ -30,11 +30,11 @@ library(tidyverse)
 We will be having the following MakML lectures: 
 
 1. Data Science, Infectious Disease Biomarkers (Mon 1100, 1200)
-2. Introduction to R, Dimension Reduction (Tues 1400)
-3. Visualizing High Dimensional Data in R (Wed 1400)
+2. Introduction to R, Dimension Reduction (Tues 1500)
+3. Visualizing High Dimensional Data in R (Wed 1500)
 4. Machine Learning: Support Vector Machines (Thu 0800)
 5. Machine Learning: Random Forests (Thu 0900)
-6. Machine Learning: Neural Networks/Deep Learning (Thu 1400)
+6. Machine Learning: Neural Networks/Deep Learning (Thu 1500)
 
 
 ## Visualizing High Dimensional Data in R
