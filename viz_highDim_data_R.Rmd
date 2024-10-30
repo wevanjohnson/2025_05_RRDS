@@ -159,7 +159,7 @@ The `TBnanostring.rds` dataset contains gene expression measurements in the bloo
 ![](figs/tbnanostring.png)
 
 ## Data Frames 
-A large proportion of data analysis challenges start with data stored in a data frame. For example, we stored the data for our motivating example in a data frame. You can access this dataset by loading __TBNanostring.rds__ object in R:
+A large proportion of data analysis challenges start with data stored in a data frame. For example, we stored the data for our motivating example in a data frame. You can access this dataset by loading `TBNanostring.rds` object in R:
 
 ```{r}
 TBnanostring <- readRDS("TBnanostring.rds")
@@ -299,6 +299,9 @@ pca_out <- prcomp(TBnanostring[,-1])
 ## make a dataframe with the results 
 pca_reduction <- as.data.frame(pca_out$x)
 pca_reduction$Condition <- as.factor(TBnanostring$TB_Status)
+
+## Explained variation
+round(pca_out$sdev^2/sum(pca_out$sdev^2),3)
 
 # View(pca_reduction)
 ```

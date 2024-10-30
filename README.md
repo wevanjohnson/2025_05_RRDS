@@ -13,8 +13,8 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
 * Dependencies (R packages to install and datasets to download):
     + Install R and R Studio
     + Please install the following R packages for Data Management: `tidyverse`, `DT`, and `gridExtra`. In R: `install.packages(c("tidyverse", "DT", "gridExtra"))`
-    + Please install the following R packages for Machine learning: `umap`, `caret`, `e1071`, `rpart`, `randomForest`, `neuralnet`. In R: `install.packages(c("umap","caret", "e1071", "rpart", "randomForest", "neuralnet"))`
-    + You will need the following datasets: ESL.mixture.rda, TBnanostring.rds
+    + Please install the following R packages for Machine learning: `umap`, `caret`, `e1071`, `rpart`, `randomForest`, `neuralnet`. In R: `install.packages(c("umap","mda","caret", "e1071", "rpart", "randomForest", "neuralnet"))`
+    + You will need the following datasets: TBnanostring.rds
 * Schedule:
 
 | Day/Time        | Topics                                          |
