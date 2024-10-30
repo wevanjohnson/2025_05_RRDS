@@ -87,7 +87,7 @@ plot(x, col = y + 3, pch = 19)
 ```
 
 ## Support Vector Machines in R
-We will use the **e1071** package which contains the svm function and make a dataframe of the data, turning $y$ into a factor variable. <!--After that, you make a call to svm on this dataframe, using y as the response variable and other variables as the predictors. The dataframe will have unpacked the matrix x into 2 columns named x1 and x2. You tell SVM that the kernel is linear, the tune-in parameter cost is 10, and scale equals false. In this example, you ask it not to standardize the variables.-->
+We will use the **e1071** package which contains the svm function and make a dataframe of the data, turning $y$ into a factor variable.
 
 \scriptsize
 ```{r,out.width="60%",fig.align='center'}
@@ -271,7 +271,6 @@ plot(xgrid, col = as.numeric(ygrid), pch = 20, cex = .2)
 points(x, col = y + 1, pch = 19)
 
 contour(px1, px2, matrix(func, 69, 99), level = 0, add = TRUE, lwd=2)
-#contour(px1, px2, matrix(func, 69, 99), level = 0.5, add = TRUE, col = "blue", lwd = 2)
 ```
 
 ## Advantages and Disadvantages of SVMs
@@ -292,7 +291,7 @@ contour(px1, px2, matrix(func, 69, 99), level = 0, add = TRUE, lwd=2)
 
 ## SVM Nanostring
 
-Remember, here is a PCA dimension reduction of the TB Nanostring dataset. The points are colored based on TB status.
+Remember the PCA dimension reduction of the TB Nanostring dataset. The points are colored based on TB status.
 
 ```{r, echo=F, out.width="70%", fig.height=4.5, fig.width=6}
 TBnanostring <- readRDS("TBnanostring.rds")
@@ -308,13 +307,50 @@ pca_reduction %>% ggplot(aes(x=PC1, y=PC2, color=Condition)) +
 ```
 
 
-Now try an SVM on the Nanostring data:
+## SVM Nanostring
+Now try an SVM on the PCs of the Nanostring data:
 \scriptsize
 ```{r}
-fit = svm(Condition ~ ., data = pca_reduction, scale = FALSE, 
+# use only the first 10 PCs
+dat = data.frame(y = pca_reduction$Condition, 
+                 pca_reduction[,1:2])
+
+fit = svm(y ~ ., data = dat, scale = FALSE, 
           kernel = "linear", cost = 10)
 print(fit)
 ```
+## SVM Nanostring
+We can evaluate the predictor with a `Confusion matrix`:
+\tiny
+```{r}
+library(caret)
+confusionMatrix(dat$y,predict(fit,dat))
+```
+
+
+## SVM Nanostring
+Plotting Nanostring data:
+```{r,out.width="75%", fig.height=4.5, fig.width=6}
+plot(fit,dat,PC2~PC1)
+```
+
+## SVM Nanostring
+
+```{r,echo=F,out.width="90%", fig.height=4.5, fig.width=6}
+make.grid = function(x, n = 75) {
+  grange = apply(x, 2, range)
+  x1 = seq(from = grange[1,1], to = grange[2,1], length = n)
+  x2 = seq(from = grange[1,2], to = grange[2,2], length = n)
+  tmp = expand.grid(X1 = x1, X2 = x2)
+}
+xgrid = make.grid(dat[,-1])
+colnames(xgrid)<-colnames(dat[,-1])
+
+ygrid = predict(fit, xgrid)
+plot(xgrid, col = c("red","blue")[as.numeric(ygrid)], pch = 20, cex = .2)
+points(dat[,2:3], col = dat[,1] , pch = 19)
+```
+
 
 ## Session Info
 \tiny
