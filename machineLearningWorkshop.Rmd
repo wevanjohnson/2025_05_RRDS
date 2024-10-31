@@ -147,7 +147,7 @@ pca_reduction$Condition <- as.factor(TBnanostring$TB_Status)
 ## Plot results with ggpplot
 pca_reduction %>% ggplot() + 
   geom_point(aes(x=PC1, y=PC2, color=Condition), shape=1) + 
-  xlab("UMAP 1") + ylab("UMAP 2") + ggtitle("UMAP Plot") +
+  xlab("PC 1") + ylab("PC 2") + ggtitle("PCA Plot") +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
@@ -470,6 +470,7 @@ points(dat[,2:3], col = dat[,1] , pch = 19)
 
 ### Example 1 (polynomial kernel) {.tabset}
 
+
 #### Apply polynomial SVM
 Now let's apply a non-linear (polynomial) SVM to our prior simulated dataset. 
 
@@ -484,7 +485,8 @@ print(svmfit)
 
 Plotting the result:
 ```{r, echo=F}
-xgrid = make.grid(dat)
+#xgrid = make.grid(dat[,-3])
+xgrid = expand.grid(dat)
 ygrid = predict(svmfit, xgrid)
 plot(xgrid, col = c("red","blue")[as.numeric(ygrid)], pch = 20, cex = .2)
 points(x, col = y + 3, pch = 19)
