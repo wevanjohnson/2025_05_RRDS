@@ -12,8 +12,22 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+## Set up: load these packages!
+```{r setup, include=F}
+suppressMessages({
+library(umap)
+library(caret)
+library(DT)
+library(tidyverse)
+library(e1071)
+library(gridExtra)
+library(mda)
+library(randomForest)
+library(neuralnet)
+})
+```
+
+```{r, eval=F}
 library(umap)
 library(caret)
 library(DT)
@@ -24,6 +38,7 @@ library(mda)
 library(randomForest)
 library(neuralnet)
 ```
+
 
 ## MakML: Introduction to Machine Learning
 Below is the code for the following modules: 
