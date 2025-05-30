@@ -1,4 +1,4 @@
-# MakML: Machine Learning Workshop (May 2025)
+# RRDS Machine Learning Workshop (May 2025)
 
 These are the materials for our Programming, Plotting, and Machine Learning Workshop at the RRDS conference in May 2025. Hopefully they are helpful!
 
@@ -20,7 +20,7 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
 | Day/Time        | Topics                                          |
 | :---------------| :---------------------------------------------- |
 | Fri 0830-0915  | Introduction to R, Dimension Reduction          |
-| Thurs 0915-1000 | Machine Learning: Support Vector Machines       |
-| Thurs 1000-1015 | Machine Learning: Random Forests       |
-| Thurs 1015-1045 | Machine Learning: Neural Networks/Deep Learning |
+| Fri 0915-1000 | Machine Learning: Support Vector Machines       |
+| Fri 1000-1015 | Machine Learning: Random Forests       |
+| Fri 1015-1045 | Machine Learning: Neural Networks/Deep Learning |
 
