@@ -1,6 +1,6 @@
-# MakML: Machine Learning Workshop (October 2024)
+# MakML: Machine Learning Workshop (May 2025)
 
-These are the materials for our Programming, Plotting, and Machine Learning Workshop at Makerere University in October 2024 (MakML). Hopefully they are helpful!
+These are the materials for our Programming, Plotting, and Machine Learning Workshop at the RRDS conference in May 2025. Hopefully they are helpful!
 
 ## Things you should know about this course
 
@@ -8,7 +8,7 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
     + Programming and Machine Learning is __NOT__ a spectator sport! You need to practice the skills you learn over and over again!
 * Communication: if you have questions or concerns, please email me: <w.evan.johnson@rutgers.edu>
 * Materials for the course:
-    + All materials for this course will be posted on the course GitHub page: [https://github.com/wevanjohnson/2024_10_MakML](https://github.com/wevanjohnson/2024_10_MakML)
+    + All materials for this course will be posted on the course GitHub page: [https://github.com/wevanjohnson/2025_05_RRDS](https://github.com/wevanjohnson/2025_05_RRDS)
     + You obviously have this since you are here!
 * Dependencies (R packages to install and datasets to download):
     + Install R and R Studio
@@ -19,10 +19,8 @@ These are the materials for our Programming, Plotting, and Machine Learning Work
 
 | Day/Time        | Topics                                          |
 | :---------------| :---------------------------------------------- |
-| Mon 1100-1300   | Data Science, Infectious Disease Biomarkers     |
-| Tues 1500-1600  | Introduction to R, Dimension Reduction          |
-| Wed 1500-1600   | Visualizing High Dimensional Data in R          |
-| Thurs 0800-0900 | Machine Learning: Support Vector Machines       |
-| Thurs 0900-1000 | Machine Learning: Random Forests       |
-| Thurs 1500-1600 | Machine Learning: Neural Networks/Deep Learning |
+| Fri 0830-0915  | Introduction to R, Dimension Reduction          |
+| Thurs 0915-1000 | Machine Learning: Support Vector Machines       |
+| Thurs 1000-1015 | Machine Learning: Random Forests       |
+| Thurs 1015-1045 | Machine Learning: Neural Networks/Deep Learning |
 
