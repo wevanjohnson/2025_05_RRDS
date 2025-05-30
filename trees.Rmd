@@ -148,7 +148,6 @@ fit <- rpart(margin ~ ., data = polls_2008)
 We can visually see where the splits were made:
 
 ```{r polls-2008-tree, fig.height=5,fig.width=7, out.width="80%", echo=FALSE, fig.align='center'}
-rafalib::mypar()
 plot(fit, margin = 0.1)
 text(fit, cex = 0.75)
 ```
@@ -389,7 +388,6 @@ polls_2008 %>%
 Here we see each of the bootstrap samples for several values of $b$:
 
 ```{r rf-animation, echo=FALSE, out.width="90%"}
-library(rafalib)
 set.seed(1)
 ntrees <- 50
 XLIM <- range(polls_2008$day)
